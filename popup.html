@@ -5,17 +5,52 @@
     body {
       width: 300px;
       padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .header i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    .header h2 {
+      margin: 0;
+      color: #333;
+    }
+    .link-container {
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 4px;
     }
     #reviewLink {
+      flex-grow: 1;
       word-break: break-all;
+      margin-right: 10px;
     }
     #copyButton {
-      margin-top: 10px;
+      background-color: #f57c00;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #copyButton i {
+      margin-right: 5px;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <h3>Coursera Peer Review Helper</h3>
+  <div class="header">
+    <i class="fa-solid fa-copyright"></i>
+    <h2>Coursera Get Shareable Link</h2>
+  </div>
   <div id="content">
     <p>No review link available. Please navigate to a Coursera submission page.</p>
   </div>
