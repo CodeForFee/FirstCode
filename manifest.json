@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Coursera Peer Review Helper",
+  "version": "1.0",
+  "description": "Assists with peer reviews on Coursera",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://www.coursera.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.coursera.org/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
