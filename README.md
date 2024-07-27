@@ -13,8 +13,8 @@ Coursera Peer Review Helper is a Chrome extension designed to streamline the pro
 
 ## Installation
 
-1. Clone or download this repository to your local machine.
-2. Open Google Chrome and go to `chrome://extensions/`.
+1. download this Extension to your local machine.
+2. Open Google Chrome and go to `setting/extension`.
 3. Enable "Developer mode" in the top right corner.
 4. Click on "Load unpacked" and select the directory where you downloaded the extension.
 5. The extension will now appear in your list of installed extensions.
